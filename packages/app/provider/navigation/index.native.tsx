@@ -13,14 +13,17 @@ export function NavigationProvider({
         () => ({
           prefixes: [Linking.createURL('/')],
           config: {
-            initialRouteName: 'home',
+            initialRouteName: 'bookmarks',
             screens: {
-              home: '',
-              'user-detail': 'users/:id',
+              bookmarks: '',
+              'sync-settings': 'sync-settings',
+              'service-info': 'service-info',
+              'import-export': 'import-export',
+              'settings': 'settings',
             },
           },
         }),
-        []
+        [],
       )}
     >
       {children}
